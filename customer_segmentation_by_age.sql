@@ -1,7 +1,9 @@
--- customer segmentation 
+-- customer segmentation
 
+-- overview on age range of customers
 select min(age), max(age)
-from shopping_data -- to check for age range of customers
+from shopping_data;
+-- The result: Youngest customer is eighteen and the oldest one is seventy.
  
 select
     case 
@@ -14,8 +16,9 @@ select
     ,gender
     ,count(*) as nb_of_purchases
     ,sum(purchase_amount) as total_purchase_amount
-    ,round(avg(purchase_amount), 2) as avg_purchase_per_order -- average amount spent per single purchase
+    ,round(avg(purchase_amount), 2) as avg_purchase_per_order --average amount spent per single purchase
 from shopping_data
 where age is not null and purchase_amount is not null
 group by 1,2
-order by 1,2;
+order by order by sum(purchase_amount) desc;
+--The result: Looking at gender and age of customers, the most spending group noticed are both male and female adults. 
