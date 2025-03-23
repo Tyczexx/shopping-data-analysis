@@ -7,4 +7,4 @@ group by 2
 order by 1 desc
 limit 5;
 
---The results: Top five locations where customers placed orders, are: Montana, California, Idaho, Illinois and Alabama.
+--The result: Top five locations where customers placed orders, are: Montana, California, Idaho, Illinois and Alabama.
