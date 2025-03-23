@@ -7,10 +7,8 @@ select
 from shopping_data
 where age > 30 and season = 'Summer'
 group by season;
-
 /*The result: there were 713 "adult" customers made purchases during summer period. 
 However, comparing with other seasons, summer was the worst-trending one.*/
-
 
 -- total sales amount for each product category and item
 select 
