@@ -1,4 +1,4 @@
-select * from shopping_data
+select * from shopping_data;
 
 -- adult customers who bought anything in summer season
 select 
