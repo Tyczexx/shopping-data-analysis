@@ -17,7 +17,7 @@ This dataset contains customer-level shopping records, including e.g:
 
 Here you can find few different sql files:
 - one file with some DDL commands helping me to normalize new created database (`database_preparation.sql`)
-- few separated files with direct customer-linked or product-linked analysis (e.g. `customer_behavior.sql`, `bestsellers_by_season.sql`). During analysis, I tried to use advanced statements or funcions like **Common Table Expression (CTE)** and **window funcions (RANK() OVER)**
+- few separated files with direct customer-linked or product-linked analysis (e.g. `customer_behavior.sql`, `bestsellers_by_season.sql`). During analysis, I tried to use advanced statements or funcions like **CASE**, **Common Table Expression (CTE)** and **Window funcions**
 
 ### ⚙️ Tools & Technologies used for the project
 - **Excel** – used in initial data checks, before creating new schema with tables in SQL.  
