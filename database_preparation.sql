@@ -1,12 +1,14 @@
+--overview check made on schema, using original table name
 select * from shopping_trends_updated
 
-
+--1# DDL command 
 alter table shopping_trends_updated 
 rename shopping_data
 commit;
 
 select * from shopping_data
 
+--2# DDL command
 alter table shopping_data
 rename column `Item Purchased` to Item_Purchased,
 rename column `Purchase Amount` to Purchase_Amount,
@@ -19,6 +21,4 @@ rename column `Previous Purchases` to Previous_Purchases,
 rename column `Payment Method` to Payment_Method,
 rename column `Frequency of Purchases` to Frequency_of_Purchases;
 commit;
-
-select * from shopping_data
 
